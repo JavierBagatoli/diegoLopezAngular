@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+
+body{
+    background-color: #24282B;
+    color: #CAC2C0;
+}
+
+h4{
+    color: #CAC2C0;
+}
+
+.p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight button {
+    background-color: #707070;
+  }
+
+.p-carousel .p-carousel-content .p-carousel-prev, .p-carousel .p-carousel-content .p-carousel-next {
+    height: 12rem;
+    border-radius: 0px;
+}
+
+.p-tabmenu .p-tabmenu-nav .p-tabmenuitem .p-menuitem-link, .p-tabmenu .p-tabmenu-nav {
+    background-color: #363636;
+    color:white;
+}
+.p-tabmenu .p-tabmenu-nav .p-tabmenuitem.p-highlight .p-menuitem-link{
+    background-color: #707070 !important;
+    border-color: #0099ff8c;
+}
