@@ -1,31 +1,31 @@
 <main class="main">
-  <app-navbar></app-navbar>
+  <app-navbar (pageTwo)="pageTwo = $event"></app-navbar>
 
   <p-dialog header="{{nameImageToShow}}" [(visible)]="visible" [modal]="true" [draggable]=false (onHide)="clean()">
     <p-image src={{urlImageToShow}} alt="Image" draggable="false"></p-image>
   </p-dialog>
 
-  <app-galery *ngIf="false"></app-galery>
+  <app-galery *ngIf="pageTwo"></app-galery>
 
-  <app-carrusel-art (imageSelected)="asingImage($event)" [type]="'ILUSTRATIONS'" [title]="'Ilustrations'"></app-carrusel-art>
-  <app-carrusel-art (imageSelected)="asingImage($event)" [type]="'COMIC'" [title]="'Comic'"></app-carrusel-art>
-  <app-carrusel-art (imageSelected)="asingImage($event)" [type]="'PORTAFOLIO_ILUSTRACION'" [title]="'Portfolio Ilustration'"></app-carrusel-art>
-  <app-carrusel-art (imageSelected)="asingImage($event)" [type]="'PORTFOLIO_CONCEPT_ART'" [title]="'Portfolio Concept Art'"></app-carrusel-art>
+  <div *ngIf="!pageTwo">
+    <app-carrusel-art (imageSelected)="asingImage($event)" [type]="'ILUSTRATIONS'" [title]="'Ilustrations'"></app-carrusel-art>
+    <app-carrusel-art (imageSelected)="asingImage($event)" [type]="'COMIC'" [title]="'Comic'"></app-carrusel-art>
+    <app-carrusel-art (imageSelected)="asingImage($event)" [type]="'PORTAFOLIO_ILUSTRACION'" [title]="'Portfolio Ilustration'"></app-carrusel-art>
+    <app-carrusel-art (imageSelected)="asingImage($event)" [type]="'PORTFOLIO_CONCEPT_ART'" [title]="'Portfolio Concept Art'"></app-carrusel-art>
+  </div>
+  
   
   <lower-zone></lower-zone>
+
   <div class="gap">
     <a href="https://x.com/diegolopezart" target="_blank" rel="noopener noreferrer" alt="Twitter">
       <i class="pi pi-twitter"></i>
     </a>
     
-    <a href="https://www.instagram.com/diegolopez_artist/" target="_blank" rel="noopener noreferrer" >
+    <a href="https://www.instagram.com/diegolopez_artist/" target="_blank" rel="noopener noreferrer" alt="instagram">
       <i class="pi pi-instagram"></i>
     </a>
     
-    <a href="https://www.artstation.com/diegolopez_artist" target="_blank" rel="noopener noreferrer" >
-      <i class="pi pi-linkedin"></i>
-    </a>
-
     <a href="https://www.artstation.com/diegolopez_artist" target="_blank" rel="noopener noreferrer" >
       <i class="pi pi-linkedin"></i>
     </a>
