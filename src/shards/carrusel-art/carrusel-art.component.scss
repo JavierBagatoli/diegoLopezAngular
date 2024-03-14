@@ -11,8 +11,23 @@ img{
   margin-top: -3rem;
   margin-left: 1%;
   color: white;
+  width: 100%;
+}
+
+.background-text{
+  z-index: 200;
+  width: fit-content;
+  text-align: center;
+  position:relative;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 element.style {
   color: aquamarine;
+}
+
+h4{
+  padding: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
 }

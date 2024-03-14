@@ -1,6 +1,7 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { ImagesService } from '../../services/images.service';
-import { item, typesImages } from '../../app/interfaces/interfaces';
+import { item } from '../../app/interfaces/interfaces';
+import { AnyCatcher } from 'rxjs/internal/AnyCatcher';
 
 @Component({
   selector: 'app-carrusel-art',
@@ -12,6 +13,8 @@ export class CarruselArtComponent {
     @Input() type : string = ""
     @Input() title : string = ""
 
+    @Output() imageSelected = new EventEmitter<any>();
+
     visible: boolean = false;
     products: item[] = [
         {image: "../../../assets/ILLUSTRATIONS/IMG_0340.jpeg",price: "dos", name: "nombre"},
@@ -20,6 +23,17 @@ export class CarruselArtComponent {
 
     constructor(private productService: ImagesService) {}
     
+    selectImage(element : any){
+        let dato : string = element.image
+
+        let dato2 = dato.slice(6)
+        
+        this.imageSelected.emit(
+            {url: dato2,
+             name: element.name
+            })
+    }
+
     ngOnInit() {
         this.products = this.productService.getImages(this.type)
         this.responsiveOptions = this.selectResponsive()

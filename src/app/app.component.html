@@ -1,21 +1,35 @@
 <main class="main">
   <app-navbar></app-navbar>
 
-  <p-button (click)="showDialog()" icon="pi pi-external-link" label="Show"></p-button>
-  <p-dialog header="Header" [(visible)]="visible" [style]="{width: '50vw'}">
-      <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
+  <p-dialog header="{{nameImageToShow}}" [(visible)]="visible" [modal]="true" [draggable]=false (onHide)="clean()">
+    <p-image src={{urlImageToShow}} alt="Image" draggable="false"></p-image>
   </p-dialog>
 
+  <app-galery *ngIf="false"></app-galery>
 
-  <app-carrusel-art [type]="'ILUSTRATIONS'" [title]="'Ilustrations'"></app-carrusel-art>
-  <app-carrusel-art [type]="'COMIC'" [title]="'Comic'"></app-carrusel-art>
-  <app-carrusel-art [type]="'PORTAFOLIO_ILUSTRACION'"  [title]="'Portfolio Ilustration'"></app-carrusel-art>
-  <app-carrusel-art [type]="'PORTFOLIO_CONCEPT_ART'"  [title]="'Portfolio Concept Art'"></app-carrusel-art>
+  <app-carrusel-art (imageSelected)="asingImage($event)" [type]="'ILUSTRATIONS'" [title]="'Ilustrations'"></app-carrusel-art>
+  <app-carrusel-art (imageSelected)="asingImage($event)" [type]="'COMIC'" [title]="'Comic'"></app-carrusel-art>
+  <app-carrusel-art (imageSelected)="asingImage($event)" [type]="'PORTAFOLIO_ILUSTRACION'" [title]="'Portfolio Ilustration'"></app-carrusel-art>
+  <app-carrusel-art (imageSelected)="asingImage($event)" [type]="'PORTFOLIO_CONCEPT_ART'" [title]="'Portfolio Concept Art'"></app-carrusel-art>
+  
+  <lower-zone></lower-zone>
+  <div class="gap">
+    <a href="https://x.com/diegolopezart" target="_blank" rel="noopener noreferrer" alt="Twitter">
+      <i class="pi pi-twitter"></i>
+    </a>
+    
+    <a href="https://www.instagram.com/diegolopez_artist/" target="_blank" rel="noopener noreferrer" >
+      <i class="pi pi-instagram"></i>
+    </a>
+    
+    <a href="https://www.artstation.com/diegolopez_artist" target="_blank" rel="noopener noreferrer" >
+      <i class="pi pi-linkedin"></i>
+    </a>
 
-  <app-about-info></app-about-info>
+    <a href="https://www.artstation.com/diegolopez_artist" target="_blank" rel="noopener noreferrer" >
+      <i class="pi pi-linkedin"></i>
+    </a>
+  </div>
 </main>
 
 <router-outlet />

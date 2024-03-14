@@ -14,3 +14,16 @@
 .imagen-foco{
     position: absolute;
 }
+
+.alto{
+    height: 360px;
+}
+
+.gap{
+    display: flex;
+    gap: 5px;
+  }
+  
+  .gap i{
+    font-size: 24px;
+  }

@@ -1,3 +1,6 @@
-<div class="custom-navbar">
-    <p-tabMenu [model]="items" [activeItem]="activeItem"></p-tabMenu>
-</div>
+<p-tabMenu [model]="items" (command)="changes($event)">
+</p-tabMenu >
+
+<app-about-info [sidebarVisible]="showDatos">
+
+</app-about-info>

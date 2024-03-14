@@ -1,0 +1,28 @@
+:host {
+  display: block;
+}
+
+.poss{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.fix-size{
+  position: absolute;
+  justify-content: center;
+  width: min(50%, 600px);
+}
+
+.fix-poss{
+  height: 50px;
+}
+
+.sombra{
+  position: absolute;
+  text-align: center;
+  width: min(50%, 600px);
+  background-color: #000000b6;
+  height: 4rem;
+}
+

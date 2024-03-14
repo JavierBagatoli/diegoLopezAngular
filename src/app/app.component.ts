@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { DialogModule } from 'primeng/dialog';
 
 @Component({
   selector: 'app-root',
@@ -7,11 +6,25 @@ import { DialogModule } from 'primeng/dialog';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'diegolopez';
-
+  title: string = 'diegolopez';
   visible: boolean = false;
+
+  urlImageToShow : string = ""
+  nameImageToShow : string = ""
 
     showDialog() {
         this.visible = true;
+    }
+
+    asingImage(element: {url: string, name: string}){
+      this.urlImageToShow = element.url.replaceAll("thumb/thumb_", "").replaceAll(".jpg",".jpeg")
+      console.log(this.urlImageToShow)
+      this.nameImageToShow = element.name
+      this.visible = true
+    }
+
+    clean(){
+      this.urlImageToShow = ""
+      this.nameImageToShow = ""
     }
 }
