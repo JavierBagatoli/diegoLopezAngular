@@ -1,94 +1,12 @@
-<div class="container-img">
-    <div class="box-img">
-        <a href="#">
-            <figure>
-                <img src="../assets/Trabajo/Clothes.jpg" alt="img-galeria">
-                <h2 class="info-image">Rysn and Chiri-Chiri</h2>
-            </figure>
-        </a>
-    </div>
-    <div class="box-img">
-        <a href="#">
-            <figure>
-                <img src="../assets/Trabajo/Clothes.jpg" alt="img-galeria">
-                <h2 class="info-image">Yumi</h2>
-            </figure>
-        </a>
-    </div>
-    <div class="box-img">
-        <a href="#">
-            <figure>
-                <h2 class="info-image"> Clashing Clouds - Words of Radiance</h2>
-                <img src="../assets/Trabajo/Dawn.jpg" alt="img-galeria">
-            </figure>
-        </a>
-    </div>
-    <div class="box-img">
-        <a href="#">
-            <figure>
-                <img src="../assets/Trabajo/Diagrama.jpg" alt="img-galeria">
-                <h2 class="info-image">The Diagram </h2>
-            </figure>
-        </a>
-    </div>
-    <div class="box-img">
-        <a href="#">
-            <figure>
-                <img src="../assets/Trabajo/Frodo.jpg" alt="img-galeria">
-                <h2 class="info-image">Tress of the Emerald Sea </h2>
-            </figure>
-        </a>
-    </div>
-    <div class="box-img">
-        <a href="#">
-            <figure>
-                <img src="../assets/Trabajo/Hoid.jpg" alt="img-galeria">
-            </figure>
-        </a>
-    </div>
-    <div class="box-img">
-        <a href="#">
-            <figure>
-                <img src="../assets/Trabajo/HoidSpirits.jpg" alt="img-galeria">
-            </figure>
-        </a>
-    </div>
-    <div class="box-img">
-        <a href="#">
-            <figure>
-                <img src="../assets/Trabajo/Storm.jpg" alt="img-galeria">
-            </figure>
-        </a>
-    </div>
-    <div class="box-img">
-        <a href="#">
-            <figure>
-                <img src="../assets/Trabajo/Tress.jpg" alt="img-galeria">
-            </figure>
-        </a>
-    </div>
-    <div class="box-img">
-        <a href="#">
-            <figure>
-                <img src="../assets/Trabajo/Yumi.jpg" alt="img-galeria">
-            </figure>
-        </a>
-    </div>
-    <div class="box-img">
-        <a href="#">
-            <figure>
-                <img src="../assets/Trabajo/Clothes.jpg" alt="img-galeria">
-            </figure>
-        </a>
-    </div>
-    <div class="box-img">
-            <figure>
-                <img src="../assets/Trabajo/Yumi.jpg" alt="img-galeria">
-            </figure>
-    </div>
-    <div class="box-img">
-        <figure>
-            <img src="../assets/Trabajo/Yumi.jpg" alt="img-galeria">
+<div class="container-img" >
+    <div class="box-img span2h" *ngFor="let imagen of vector">
+        <figure (click)="selectImage(imagen)" >
+            <img 
+                src="{{imagen.url}}"
+                alt="img-galeria">
+            <h2 class="info-image">{{imagen.name}}</h2>
         </figure>
     </div>
+   
+    
 </div>

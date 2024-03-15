@@ -16,7 +16,7 @@
   margin-bottom: 60px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 250px;
+  grid-template-rows: 250px !important;
   grid-gap: 20px;
 }
 .container-img .box-img figure{
@@ -28,12 +28,14 @@
   height: 100%;
   object-fit: cover;
 }
-.container-img .box-img:nth-child(1){
+
+.container-img .box-img:nth-child(7n+1){
   grid-column-start: span 2;
 }
-.container-img .box-img:nth-child(4){
+.container-img .box-img:nth-child(8n){
   grid-row-start: span 2;
 }
+
 @media screen and (max-width:800px){
   .container-img{
       width: 95%;
@@ -53,4 +55,18 @@
   .container-img .box-img img{
       height: 200px;
   }
+}
+
+.box-img{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.info-image{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 0.8rem;
+  padding: 5px 10px 5px;
+  background-color: #000000b6;
 }

@@ -5,7 +5,7 @@
     <p-image src={{urlImageToShow}} alt="Image" draggable="false"></p-image>
   </p-dialog>
 
-  <app-galery *ngIf="pageTwo"></app-galery>
+  <app-galery *ngIf="pageTwo" (imageSelected)="asingImage($event)"></app-galery>
 
   <div *ngIf="!pageTwo">
     <app-carrusel-art (imageSelected)="asingImage($event)" [type]="'ILUSTRATIONS'" [title]="'Ilustrations'"></app-carrusel-art>
@@ -17,7 +17,7 @@
   
   <lower-zone></lower-zone>
 
-  <div class="gap">
+  <div class="gap footer">
     <a href="https://x.com/diegolopezart" target="_blank" rel="noopener noreferrer" alt="Twitter">
       <i class="pi pi-twitter"></i>
     </a>
