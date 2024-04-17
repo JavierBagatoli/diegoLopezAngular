@@ -11,66 +11,25 @@ export class GaleryComponent implements OnInit {
   @Output() imageSelected = new EventEmitter<any>();
 
   vector = [
-    {url: "../assets/Trabajo/Clothes.jpg",
-     name: "Rysn and Chiri-Chiri"}
-    ,
-    {url: "../assets/Trabajo/Clothes.jpg",
-     name: ""}
-    ,
-    {url: "../assets/Trabajo/Dawn.jpg",
-      name: ""}
-     ,
-     {url: "../assets/Trabajo/Diagrama.jpg",
-      name: ""}
-     ,
-     {url: "../assets/Trabajo/Frodo.jpg",
-      name: ""}
-     ,
-     {url: "../assets/Trabajo/Hoid.jpg",
-      name: ""}
-     ,
-     {url: "../assets/Trabajo/HoidSpirits.jpg",
-      name: ""}
-     ,
-     {url: "../assets/Trabajo/Storm.jpg",
-      name: "",
-      size: "horizontal"
-    }
-     ,
-     {url: "../assets/Trabajo/Tress.jpg",
-      name: ""}
-    ,
-    {url: "../assets/Trabajo/Yumi.jpg",
-      name: ""}
-    ,
-    {url: "../assets/Trabajo/Clothes.jpg",
-      name: ""}
-     ,
-     {url: "../assets/Trabajo/Yumi.jpg",
-      name: ""}
-    ,
-    {url: "../assets/Trabajo/Yumi.jpg",
-      name: ""},
-      {url: "../assets/Trabajo/Tress.jpg",
-       name: ""}
-     ,
-     {url: "../assets/Trabajo/Yumi.jpg",
-       name: ""}
-     ,
-     {url: "../assets/Trabajo/Clothes.jpg",
-       name: ""}
-      ,
-      {url: "../assets/Trabajo/Yumi.jpg",
-       name: ""}
-     ,
-     {url: "../assets/Trabajo/Yumi.jpg",
-       name: ""}
-
-    
-    
-    
-    
-    
+    {url: "../../../assets/Trabajo/thumb/thumb_Clothes.jpg",
+     name: "Clothes"},
+    {url: "../../../assets/Trabajo/thumb/thumb_Dawn.jpg",
+     name: "Rysn and Chiri-Chiri"},
+    {url: "../../../assets/Trabajo/thumb/thumb_Diagrama.jpg",
+      name: "The Diagram"},
+    {url: "../../../assets/Trabajo/thumb/thumb_Frodo.jpg",
+      name: "Frodo Baggins"},
+    {url: "../../../assets/Trabajo/thumb/thumb_Hoid.jpg",
+      name: "Hoid's Life"},
+    {url: "../../../assets/Trabajo/thumb/thumb_HoidSpirits.jpg",
+      name: "Hoid Across the Cosmere"},
+    {url: "../../../assets/Trabajo/thumb/thumb_Tress.jpg",
+      name: "Tress",
+      size: "horizontal"},
+    {url: "../../../assets/Trabajo/thumb/thumb_Storm.jpg",
+      name: "Clashing Clouds - Words of Radiance"},
+    {url: "../../../assets/Trabajo/thumb/thumb_Yumi.jpg",
+      name: "Yumi"} 
   ]
 
   ngOnInit(): void {
