@@ -21,7 +21,7 @@
 
 .gap{
     display: flex;
-    gap: 5px;
+    gap: 16px;
   }
   
   .gap i{
@@ -44,3 +44,17 @@
     height: 40px;
     color: white;
   }
+
+.center{
+  display: flex;
+  justify-content: center;
+}
+
+.margin-botton{
+  margin-bottom: 2rem;
+}
+
+.svg-img{
+  filter: invert(42%) sepia(93%) saturate(2%) hue-rotate(87deg) brightness(119%) contrast(119%);
+  height: 24px;
+}

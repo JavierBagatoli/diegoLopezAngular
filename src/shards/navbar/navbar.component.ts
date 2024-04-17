@@ -27,7 +27,7 @@ export class NavbarComponent implements OnInit {
     console.log(argument)
       if(argument.label === this.items[1].label){
         this.pageTwo.emit(true)
-      }else{
+      }else if(argument.label === this.items[0].label){
         this.pageTwo.emit(false)
       }
 
@@ -39,8 +39,6 @@ export class NavbarComponent implements OnInit {
         window.open("https://www.artstation.com/diegolopez_artist", "_blank");
       }
       
-      
-
       if(argument.label === this.items[4].label){
         this.showDatos = true
       }else{

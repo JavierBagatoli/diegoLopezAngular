@@ -9,27 +9,33 @@
 
   <div *ngIf="!pageTwo">
     <app-carrusel-art (imageSelected)="asingImage($event)" [type]="'ILUSTRATIONS'" [title]="'Ilustrations'"></app-carrusel-art>
-    <app-carrusel-art (imageSelected)="asingImage($event)" [type]="'COMIC'" [title]="'Comic'"></app-carrusel-art>
+    <!--<app-carrusel-art (imageSelected)="asingImage($event)" [type]="'COMIC'" [title]="'Comic'"></app-carrusel-art>-->
     <app-carrusel-art (imageSelected)="asingImage($event)" [type]="'PORTAFOLIO_ILUSTRACION'" [title]="'Portfolio Ilustration'"></app-carrusel-art>
     <app-carrusel-art (imageSelected)="asingImage($event)" [type]="'PORTFOLIO_CONCEPT_ART'" [title]="'Portfolio Concept Art'"></app-carrusel-art>
   </div>
   
   
-  <lower-zone></lower-zone>
+  
 
-  <div class="gap footer">
-    <a href="https://x.com/diegolopezart" target="_blank" rel="noopener noreferrer" alt="Twitter">
-      <i class="pi pi-twitter"></i>
-    </a>
-    
-    <a href="https://www.instagram.com/diegolopez_artist/" target="_blank" rel="noopener noreferrer" alt="instagram">
-      <i class="pi pi-instagram"></i>
-    </a>
-    
-    <a href="https://www.artstation.com/diegolopez_artist" target="_blank" rel="noopener noreferrer" >
-      <i class="pi pi-linkedin"></i>
-    </a>
+  <div class="gap footer center margin-botton">
+
+      <a href="https://x.com/diegolopezart" target="_blank" rel="noopener noreferrer" alt="Twitter">
+        <i class="pi pi-twitter"></i>
+      </a>
+      
+      <a href="https://www.instagram.com/diegolopez_artist/" target="_blank" rel="noopener noreferrer" alt="instagram">
+        <i class="pi pi-instagram"></i>
+      </a>
+      
+      <a href="https://www.artstation.com/diegolopez_artist" target="_blank" rel="noopener noreferrer" >
+        <i class="pi pi-linkedin"></i>
+      </a>
+
+      <a href="https://www.patreon.com/user/creators?u=76669117" target="_blank" rel="noopener noreferrer" >
+        <img class="svg-img" src="../assets/svg/patreon.svg" alt="My Parteon"/>
+      </a>
   </div>
+  <lower-zone></lower-zone>
 </main>
 
 <router-outlet />

@@ -1,7 +1,7 @@
 export interface item{
     image:string,
     price: string,
-    name: "nombre"
+    name: string
  }
 
 export enum typesImages{

@@ -44,7 +44,45 @@ export class CarruselArtComponent {
     }
 
     selectResponsive(){
-        if(this.type == "COMIC"){
+        if(this.type === "ILUSTRATIONS"){
+            return [
+                {
+                    breakpoint: '2150px',
+                    numVisible: 4,
+                    numScroll: 2
+                },
+                {
+                    breakpoint: '1400px',
+                    numVisible: 4,
+                    numScroll: 2
+                },
+                {
+                    breakpoint: '1300px',
+                    numVisible: 4,
+                    numScroll: 2
+                },
+                {
+                    breakpoint: '1220px',
+                    numVisible: 4,
+                    numScroll: 2
+                },
+                {
+                    breakpoint: '1000px',
+                    numVisible: 3,
+                    numScroll: 2
+                },
+                {
+                    breakpoint: '900px',
+                    numVisible: 2,
+                    numScroll: 1
+                },
+                {
+                    breakpoint: '650px',
+                    numVisible: 1,
+                    numScroll: 1
+                }
+            ];
+        }else if(this.type === "COMIC"){
             return [
                 {
                     breakpoint: '2150px',
@@ -83,6 +121,34 @@ export class CarruselArtComponent {
                 }
             ];
         }else{
+            return [
+                {
+                    breakpoint: '2150px',
+                    numVisible: 3,
+                    numScroll: 2
+                },
+                {
+                    breakpoint: '1400px',
+                    numVisible: 2,
+                    numScroll: 2
+                },
+                {
+                    breakpoint: '1300px',
+                    numVisible: 2,
+                    numScroll: 2
+                },
+                {
+                    breakpoint: '1220px',
+                    numVisible: 2,
+                    numScroll: 2
+                },
+                {
+                    breakpoint: '1000px',
+                    numVisible: 1,
+                    numScroll: 1
+                }
+            ];
+
             return [
                 {
                     breakpoint: '2150px',
