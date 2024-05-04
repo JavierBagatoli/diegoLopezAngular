@@ -18,6 +18,7 @@ export class AppComponent {
     }
 
     asingImage(element: {url: string, name: string}){
+      console.log(element)
       if(element.url.endsWith(".jpeg")){
         this.urlImageToShow = element.url.replaceAll("thumb/thumb_", "").replaceAll(".jpg",".jpeg")
       }else{

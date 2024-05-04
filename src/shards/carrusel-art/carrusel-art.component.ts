@@ -47,37 +47,32 @@ export class CarruselArtComponent {
         if(this.type === "ILUSTRATIONS"){
             return [
                 {
+                    breakpoint: '3000px',
+                    numVisible: 5,
+                    numScroll: 2
+                },
+                {
                     breakpoint: '2150px',
                     numVisible: 4,
                     numScroll: 2
                 },
                 {
-                    breakpoint: '1400px',
-                    numVisible: 4,
-                    numScroll: 2
-                },
-                {
-                    breakpoint: '1300px',
-                    numVisible: 4,
-                    numScroll: 2
-                },
-                {
-                    breakpoint: '1220px',
-                    numVisible: 4,
-                    numScroll: 2
-                },
-                {
-                    breakpoint: '1000px',
+                    breakpoint: '1600px',
                     numVisible: 3,
                     numScroll: 2
                 },
                 {
-                    breakpoint: '900px',
+                    breakpoint: '1300px',
                     numVisible: 2,
-                    numScroll: 1
+                    numScroll: 2
                 },
                 {
-                    breakpoint: '650px',
+                    breakpoint: '1220px',
+                    numVisible: 2,
+                    numScroll: 2
+                },
+                {
+                    breakpoint: '950px',
                     numVisible: 1,
                     numScroll: 1
                 }
@@ -120,6 +115,29 @@ export class CarruselArtComponent {
                     numScroll: 1
                 }
             ];
+        }else if(this.type === "PORTAFOLIO_ILUSTRACION" || this.type === "PORTFOLIO_CONCEPT_ART"){
+            return [
+                {
+                    breakpoint: '4000px',
+                    numVisible: 4,
+                    numScroll: 2
+                },
+                {
+                    breakpoint: '3000px',
+                    numVisible: 3,
+                    numScroll: 2
+                },
+                {
+                    breakpoint: '2000px',
+                    numVisible: 2,
+                    numScroll: 1
+                },
+                {
+                    breakpoint: '1325px',
+                    numVisible: 1,
+                    numScroll: 1
+                }
+            ];
         }else{
             return [
                 {
@@ -135,34 +153,6 @@ export class CarruselArtComponent {
                 {
                     breakpoint: '1300px',
                     numVisible: 2,
-                    numScroll: 2
-                },
-                {
-                    breakpoint: '1220px',
-                    numVisible: 2,
-                    numScroll: 2
-                },
-                {
-                    breakpoint: '1000px',
-                    numVisible: 1,
-                    numScroll: 1
-                }
-            ];
-
-            return [
-                {
-                    breakpoint: '2150px',
-                    numVisible: 4,
-                    numScroll: 2
-                },
-                {
-                    breakpoint: '1400px',
-                    numVisible: 4,
-                    numScroll: 2
-                },
-                {
-                    breakpoint: '1300px',
-                    numVisible: 3,
                     numScroll: 2
                 },
                 {
