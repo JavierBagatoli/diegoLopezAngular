@@ -47,29 +47,9 @@ export class ImagesService {
           {image: `${this.basicUrl}${semiUrl}/thumb/thumb_7_Rysn_&_Chiri_Chiri.png`,price: "dos", name: "Rysn & Chiri-Chiri"},
           {image: `${this.basicUrl}${semiUrl}/thumb/thumb_8_Honor_is_Dead.png`,price: "dos", name: "Honor is Dead"},
           {image: `${this.basicUrl}${semiUrl}/thumb/thumb_9_The_Diagram.png`,price: "dos", name: "The Diagram"},
+          {image: `${this.basicUrl}${semiUrl}/thumb/thumb_10_Zellion.png`,price: "dos", name: "Zellion"},
           {image: `${this.basicUrl}${semiUrl}/thumb/thumb_contact.png`,price: "dos", name: "Contact Me"},
         ]
-
-        semiUrl = "PORTFOLIO_CONCEPT_ART"
-        return [
-          {image: `${this.basicUrl}${semiUrl}/thumb/thumb_1.jpg`,price: "dos", name: "nombre"},
-          {image: `${this.basicUrl}${semiUrl}/thumb/thumb_2.jpg`,price: "dos", name: "nombre"},
-          {image: `${this.basicUrl}${semiUrl}/thumb/thumb_3.jpg`,price: "dos", name: "nombre"},
-          {image: `${this.basicUrl}${semiUrl}/thumb/thumb_4.jpg`,price: "dos", name: "nombre"},
-          {image: `${this.basicUrl}${semiUrl}/thumb/thumb_5.jpg`,price: "dos", name: "nombre"},
-          {image: `${this.basicUrl}${semiUrl}/thumb/thumb_6.jpg`,price: "dos", name: "nombre"},
-          {image: `${this.basicUrl}${semiUrl}/thumb/thumb_7.jpg`,price: "dos", name: "nombre"},
-          {image: `${this.basicUrl}${semiUrl}/thumb/thumb_8.jpg`,price: "dos", name: "nombre"},
-          {image: `${this.basicUrl}${semiUrl}/thumb/thumb_9.jpg`,price: "dos", name: "nombre"},
-          {image: `${this.basicUrl}${semiUrl}/thumb/thumb_10.jpg`,price: "dos", name: "nombre"},
-          {image: `${this.basicUrl}${semiUrl}/thumb/thumb_11.jpg`,price: "dos", name: "nombre"},
-          {image: `${this.basicUrl}${semiUrl}/thumb/thumb_12.jpg`,price: "dos", name: "nombre"},
-          {image: `${this.basicUrl}${semiUrl}/thumb/thumb_13.jpg`,price: "dos", name: "nombre"},
-          {image: `${this.basicUrl}${semiUrl}/thumb/thumb_14.jpg`,price: "dos", name: "nombre"},
-          {image: `${this.basicUrl}${semiUrl}/thumb/thumb_15.jpg`,price: "dos", name: "nombre"},
-          {image: `${this.basicUrl}${semiUrl}/thumb/thumb_16.jpg`,price: "dos", name: "nombre"},
-        ]
-        break
       case  "PORTFOLIO_CONCEPT_ART":
         semiUrl = "portfolio_concept"
         return [
@@ -83,9 +63,7 @@ export class ImagesService {
         ]
         break
       default:
-        [{image: "../../../assets/ILLUSTRATIONS/IMG_0340.jpeg",price: "dos", name: "nombre"},
-         {image: "../../../assets/ILLUSTRATIONS/IMG_0340.jpeg",price: "dos", name: "nombre"}
-      ]
+        []
         break;
     }  
 

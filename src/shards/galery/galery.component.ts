@@ -29,7 +29,9 @@ export class GaleryComponent implements OnInit {
     {url: "../../../assets/Trabajo/thumb/thumb_Storm.jpg",
       name: "Clashing Clouds - Words of Radiance"},
     {url: "../../../assets/Trabajo/thumb/thumb_Yumi.jpg",
-      name: "Yumi"} 
+      name: "Yumi"},
+    {url: "../../../assets/Trabajo/thumb/thumb_Zellion.jpg",
+      name: "Zellion"} 
   ]
 
   ngOnInit(): void {
